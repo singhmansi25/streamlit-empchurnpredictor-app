@@ -14,8 +14,8 @@ churn_cutoff = 0.3
 
 def app():
     # Loading the machine learning components
-    ml_components_dict = tf.keras.models.load_model("./Assets/tel_model.h5")
-    scaler_dict = joblib.load("./Assets/scalerKer.pkl")
+    ml_components_dict = tf.keras.models.load_model("./Assets/empchurn_model.h5")
+    scaler_dict = joblib.load("./Assets/scalerK.pkl")
 
     st.title(":1234: Employee Churn App")
     st.write("""Welcome to ChurnShield Employee Churn Prediction app!  
