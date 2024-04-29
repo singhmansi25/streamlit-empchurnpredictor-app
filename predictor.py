@@ -97,3 +97,5 @@ def app():
         
         # Display the predictions with custom styling
         # st.success(f"Predicted Churn Rate: {predictions[0]:,.2f}",icon="✅")
+
+app()
