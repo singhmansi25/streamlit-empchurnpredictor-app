@@ -87,12 +87,12 @@ def app():
             # st.write(predictions)
             ans = predictions[0]
             # Display the predictions
-            st.balloons()
 
             if ans>churn_cutoff:
-                st.success(f"The Employee is likely to leave the Company.")
+                st.success(f"The Employee is likely to leave the Company. 😢")
             else:
                 st.success(f"The Employee is happy to be a part of Company.")
+                st.balloons()
         
         # Display the predictions with custom styling
         # st.success(f"Predicted Churn Rate: {predictions[0]:,.2f}",icon="✅")
